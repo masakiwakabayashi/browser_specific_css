@@ -1,0 +1,43 @@
+
+/* クロームのみのCSS */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .sample_label:after {
+    margin-top: -7px;
+  }
+  .sample_label:before {
+    margin-top: -7px;
+  }
+}
+
+/* エッジのみのCSS */
+/* @supports (-ms-ime-align: auto) {
+  .sample_label:after {
+    margin-top: -4px;
+  }
+  .sample_label:before {
+    margin-top: 2px;
+  }
+} */
+
+
+/* FirefoxのみのCSS */
+@-moz-document url-prefix(){
+  .sample_label:after {
+    margin-top: 2px;
+  }
+  .sample_label:before {
+    margin-top: 2px;
+  }
+}
+
+
+/* サファリのみのCSS */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  ::-webkit-full-page-media, :future, :root .sample_label:after {
+    margin-top: -15px;
+  }
+  ::-webkit-full-page-media, :future, :root .sample_label:before {
+    margin-top: 2px;
+  }
+}
+
